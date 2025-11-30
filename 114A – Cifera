@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    long long k, l;
+    cin >> k >> l;
+    int cnt = 0;
+    while(l % k == 0){
+        l /= k;
+        cnt++;
+    }
+    cout << (l == 1 ? "YES\n" + to_string(cnt-1) : "NO");
+}
